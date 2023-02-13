@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="ticTacToe.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  <div class="nameSection">
+    <div><i class="fa fa-circle-o menuI"></i>
+      <h2 id="name_p1" style="display: flex; color: white;"> Player 1</h2>
+    </div>
+    <div><i class="fa fa-times menuI menuI2"></i>
+      <h2 id="name_p2" style="display: flex; color: white;"> Player 2</h2>
+    </div>
+  </div>
+  <div class="waitingSection">
+   <p>Waiting for another player....</p>
+  </div>
+  <div class="menuContainer">
+    <div class="menu">
+        <input type="text" class="askName" placeholder="Enter your name"><br>
+        <button>Let's Go</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container_content">
+      <div id="box1" class="box" isEmpty="true"></div>
+      <div id="box2" class="box" isEmpty="true"></div>
+      <div id="box3" class="box" isEmpty="true"></div>
+      <div id="box4" class="box" isEmpty="true"></div>
+      <div id="box5" class="box" isEmpty="true"></div>
+      <div id="box6" class="box" isEmpty="true"></div>
+      <div id="box7" class="box" isEmpty="true"></div>
+      <div id="box8" class="box" isEmpty="true"></div>
+      <div id="box9" class="box" isEmpty="true"></div>
+    </div>
+  </div>
+  <div class="canvas">
+    <div class="result"></div>
+    <div class="restart" onclick="Restart()">Restart</div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+</body>
+
+</html>
